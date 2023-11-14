@@ -1,0 +1,244 @@
+.preferences-section {
+  &__container {
+    border-radius: 36px;
+    background-image: url("../img/preferences-section__bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include mobile {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+  }
+
+  .content-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    position: relative;
+    z-index: 1;
+    padding-top: get-vw(110px);
+    padding-bottom: get-vw(220px);
+
+    @include mobile {
+      padding-top: 36px;
+    }
+  }
+
+  &__right {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: get-vw(100px);
+    max-width: max(250px, get-vw(400px));
+
+    @include mobile {
+      padding-top: 0;
+      max-width: none;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: get-vw(15px);
+    font-weight: 400;
+    font-style: normal;
+    font-size: max(14px, get-vw(24px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #9b9b9b;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: get-vw(50px);
+    max-width: get-vw(575px);
+    font-weight: 400;
+    font-style: normal;
+    font-size: max(20px, get-vw(44px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #fff;
+
+    span {
+      font-weight: 600;
+      color: #00d664;
+    }
+
+    @include mobile {
+      max-width: none;
+    }
+  }
+
+  &__list {
+    max-width: get-vw(480px);
+
+    &-title {
+      margin-bottom: 15px;
+      font-weight: 500;
+      font-style: normal;
+      font-size: max(14px, get-vw(24px));
+      line-height: 140%;
+      letter-spacing: -0.5px;
+      color: #00d664;
+    }
+
+    &-item {
+      position: relative;
+      padding-left: max(22px, get-vw(55px));
+      font-weight: 400;
+      font-style: normal;
+      font-size: max(12px, get-vw(24px));
+      line-height: 140%;
+      letter-spacing: -0.5px;
+      color: #fff;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: max(16px, get-vw(30px));
+        height: max(16px, get-vw(30px));
+        background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='15' r='15' fill='%2300D664'/%3E%3Cpath d='M19.5204 12.2868L18.6943 11.4244C18.5829 11.3081 18.4437 11.25 18.2859 11.25C18.1281 11.25 17.9889 11.3081 17.8775 11.4244L13.9047 15.5717L12.1318 13.7112C12.0204 13.595 11.8812 13.5368 11.7234 13.5368C11.5656 13.5368 11.4264 13.595 11.315 13.7112L10.4889 14.5736C10.3682 14.6899 10.3125 14.8353 10.3125 15C10.3125 15.1647 10.3682 15.3101 10.4796 15.4264L12.6702 17.7132L13.4963 18.5756C13.6077 18.6919 13.7469 18.75 13.9047 18.75C14.0625 18.75 14.2017 18.6919 14.3131 18.5756L15.1392 17.7132L19.5204 13.1395C19.6318 13.0233 19.6875 12.8779 19.6875 12.7132C19.6875 12.5484 19.6318 12.4031 19.5204 12.2868Z' fill='%231C1C1C'/%3E%3C/svg%3E%0A");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @include mobile {
+          top: 0;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: max(10px, get-vw(20px));
+      }
+    }
+
+    @include mobile {
+      max-width: none;
+    }
+  }
+
+  &__form {
+    &-title {
+      margin-bottom: max(16px, get-vw(24px));
+      font-weight: 400;
+      font-style: normal;
+      font-size: max(16px, get-vw(36px));
+      line-height: 140%;
+      letter-spacing: -0.5px;
+      text-align: center;
+      color: #fff;
+
+      span {
+        font-weight: 500;
+        color: #00d664;
+      }
+    }
+
+    .custom-checkbox {
+      @include custom-checkbox;
+    }
+
+    .iti {
+      margin-bottom: max(12px, get-vw(20px));
+      width: 100%;
+    }
+
+    &-input {
+      margin-bottom: max(12px, get-vw(20px));
+      border-radius: 115px;
+      padding: max(20px, get-vw(38px)) max(40px, get-vw(45px));
+      width: 100%;
+      box-shadow: 0 0 21px 0 rgb(255 255 255 / 40%) inset;
+      font-weight: 500;
+      font-style: normal;
+      font-size: max(14px, get-vw(18px));
+      line-height: 135%;
+      letter-spacing: -0.5px;
+      color: #000;
+      background: #fff;
+
+      &::placeholder {
+        font-weight: 500;
+        font-style: normal;
+        font-size: max(14px, get-vw(18px));
+        line-height: 135%;
+        letter-spacing: -0.5px;
+        color: #000;
+      }
+    }
+
+    &-button {
+      justify-content: center;
+      margin-bottom: get-vw(30px);
+      padding: max(20px, get-vw(38px)) max(40px, get-vw(45px));
+      width: 100%;
+    }
+
+    &-checkbox {
+      grid-column: 2;
+
+      span {
+        font-weight: 500;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 135%;
+        letter-spacing: -0.5px;
+        color: #fff;
+
+        a {
+          color: #00b656;
+
+          @include hover {
+            color: #01a04b;
+          }
+        }
+      }
+    }
+
+    .custom-checkbox__content {
+      padding-left: 36px;
+    }
+
+    .custom-checkbox__content::before {
+      border-radius: 5px;
+      width: 20px;
+      height: 20px;
+      background: linear-gradient(68deg, #009345 25.59%, #00c15b 103.07%), #31b939;
+    }
+
+    .custom-checkbox__content::after {
+      border-radius: 5px;
+      width: get-vw(20px);
+      height: get-vw(20px);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Crect width='20' height='20' rx='5' fill='%2331B939'/%3E%3Crect width='20' height='20' rx='5' fill='url(%23paint0_linear_1_1055)'/%3E%3Cpath d='M13.8574 7.82946L13.1525 7.13953C13.0574 7.04651 12.9386 7 12.804 7C12.6693 7 12.5505 7.04651 12.4554 7.13953L9.06535 10.4574L7.55248 8.96899C7.45743 8.87597 7.33861 8.82946 7.20396 8.82946C7.06931 8.82946 6.9505 8.87597 6.85545 8.96899L6.1505 9.65891C6.04752 9.75194 6 9.86822 6 10C6 10.1318 6.04752 10.2481 6.14257 10.3411L8.01188 12.1705L8.71683 12.8605C8.81188 12.9535 8.93069 13 9.06535 13C9.2 13 9.31881 12.9535 9.41386 12.8605L10.1188 12.1705L13.8574 8.51163C13.9525 8.4186 14 8.30233 14 8.17054C14 8.03876 13.9525 7.92248 13.8574 7.82946Z' fill='white'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1_1055' x1='9.72973' y1='26.2766' x2='28.4337' y2='18.7076' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23009345'/%3E%3Cstop offset='1' stop-color='%2300C15B'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__person {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: get-vw(630px);
+    height: get-vw(935px);
+    transform: translateX(-50%);
+
+    @include mobile {
+      position: static;
+      display: block;
+      margin: 0 auto;
+      width: 255px;
+      height: auto;
+      transform: translate(0);
+    }
+  }
+}

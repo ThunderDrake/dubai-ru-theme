@@ -1,0 +1,24 @@
+@import "./vendor/normalize";
+
+// стили для модального окна
+@import "../../../node_modules/graph-modal/dist/graph-modal.min";
+
+// стили для табов
+// @import "../../../node_modules/graph-tabs/dist/graph-tabs.min";
+
+// стили для библиотеки aos
+@import "../../../node_modules/aos/dist/aos";
+
+// стили для свайпера
+@import "../../../node_modules/swiper/swiper-bundle.min";
+@import "../../../node_modules/intl-tel-input/build/css/intlTelInput";
+
+.iti__flag {
+  background-image: url("../img/flags.png");
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../img/flags@2x.png");
+  }
+}

@@ -1,0 +1,10 @@
+.quiz {
+  iframe {
+    height: max(765px, get-vw(815px));
+
+    @include mobile {
+      height: 765px !important;
+      aspect-ratio: auto;
+    }
+  }
+}

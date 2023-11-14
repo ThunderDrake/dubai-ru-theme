@@ -1,0 +1,193 @@
+.news-section {
+  margin-bottom: get-vw(80px);
+
+  &__title {
+    margin: 0;
+    max-width: get-vw(1230px);
+    font-weight: 400;
+    font-style: normal;
+    font-size: max(22px, get-vw(44px));
+    line-height: 140%; /* 61.6px */
+    letter-spacing: -0.5px;
+    color: #6b6b6b;
+
+    span {
+      font-weight: 600;
+      color: #009345;
+    }
+
+    b {
+      font-weight: 500;
+      color: #1c1c1c;
+    }
+
+    @include mobile {
+      margin-bottom: 23px;
+      max-width: none;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: max(23px, get-vw(70px));
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__slider {
+    &-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgba(#6b6b6b, 0.2);
+      border-radius: 50%;
+      width: max(55px, get-vw(80px));
+      height: max(55px, get-vw(80px));
+
+      svg {
+        width: max(21px, get-vw(29px));
+        height: 16px;
+      }
+
+      &.swiper-button-disabled {
+        border-color: #6b6b6b;
+        opacity: 0.2;
+        cursor: auto;
+      }
+
+      &--next {
+        margin-left: get-vw(36px);
+        transform: rotate(180deg);
+      }
+
+      @include hover {
+        border-color: #6b6b6b;
+      }
+    }
+
+    &-controls {
+      display: flex;
+    }
+
+    &-slide {
+      @include mobile {
+        width: 260px;
+      }
+    }
+  }
+}
+
+.news {
+  height: auto;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: max(12px, get-vw(24px));
+    height: 100%;
+    background: #f4f8fb;
+  }
+
+  &__image {
+    display: block;
+    border-radius: max(12px, get-vw(24px));
+    aspect-ratio: 4/3;
+    width: 100%;
+
+    &-wrapper {
+      position: relative;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__date {
+    position: absolute;
+    right: max(15px, get-vw(32px));
+    bottom: max(15px, get-vw(18px));
+    border-radius: 64px;
+    padding: 7px 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: max(12px, get-vw(14px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #fff;
+    background: #009345;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: get-vw(25px);
+    height: 100%;
+
+    @include mobile {
+      padding: 25px 18px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: max(14px, get-vw(20px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #1c1c1c;
+  }
+
+  &__description {
+    margin-bottom: max(30px, get-vw(40px));
+    font-weight: 400;
+    font-style: normal;
+    font-size: max(12px, get-vw(18px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #6b6b6b;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: max(16px, get-vw(18px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #009345;
+
+    &::after {
+      content: "";
+      display: block;
+      margin-left: get-vw(25px);
+      width: get-vw(61px);
+      height: get-vw(16px);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='61' height='16' viewBox='0 0 61 16' fill='none'%3E%3Cpath d='M60.7071 8.7071C61.0976 8.31658 61.0976 7.68341 60.7071 7.29289L54.3432 0.928927C53.9526 0.538403 53.3195 0.538403 52.9289 0.928928C52.5384 1.31945 52.5384 1.95262 52.9289 2.34314L58.5858 7.99999L52.9289 13.6568C52.5384 14.0474 52.5384 14.6805 52.9289 15.0711C53.3195 15.4616 53.9526 15.4616 54.3432 15.0711L60.7071 8.7071ZM8.74228e-08 9L60 8.99999L60 6.99999L-8.74228e-08 7L8.74228e-08 9Z' fill='%23009345'/%3E%3C/svg%3E");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    @include hover {
+      font-weight: 600;
+
+      &::after {
+        margin-left: get-vw(35px);
+      }
+    }
+  }
+}

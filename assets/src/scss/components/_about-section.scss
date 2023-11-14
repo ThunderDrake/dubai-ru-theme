@@ -1,0 +1,123 @@
+.about-section {
+  position: relative;
+  z-index: 1;
+  margin-top: get-vw(-320px);
+  background-image: url("../img/about-section__bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__container {
+    padding-top: get-vw(280px);
+  }
+
+  &__content {
+    margin-right: get-vw(50px);
+    margin-left: auto;
+    padding-top: max(75px, get-vw(200px));
+    padding-bottom: max(50px, get-vw(115px));
+    max-width: get-vw(900px);
+
+    @include mobile {
+      margin-right: 0;
+      max-width: none;
+    }
+  }
+
+  &__persons {
+    position: absolute;
+    left: get-vw(-20px);
+    bottom: 0;
+    display: block;
+    width: get-vw(838px);
+    height: get-vw(829px);
+
+    @include mobile {
+      position: static;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    margin-bottom: get-vw(34px);
+    max-width: get-vw(700px);
+    font-weight: 400;
+    font-style: normal;
+    font-size: max(22px, get-vw(44px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #6b6b6b;
+
+    span {
+      font-weight: 500;
+      color: #1c1c1c;
+    }
+
+    @include mobile {
+      max-width: none;
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 1;
+    margin-bottom: get-vw(80px);
+    max-width: get-vw(788px);
+    font-weight: 400;
+    font-style: normal;
+    font-size: max(16px, get-vw(24px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #6b6b6b;
+
+    span {
+      font-weight: 500;
+      color: #1c1c1c;
+    }
+
+    @include mobile {
+      max-width: none;
+    }
+  }
+
+  &__stats {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: get-vw(285px) get-vw(175px) get-vw(190px);
+    border-radius: 12px;
+    padding: get-vw(35px);
+    background: #009345;
+    gap: get-vw(80px);
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 25px 15px;
+      gap: 22px;
+    }
+  }
+
+  &__item {
+    &-number {
+      margin-bottom: 5px;
+      font-weight: 600;
+      font-style: normal;
+      font-size: max(28px, get-vw(44px));
+      line-height: 130%;
+      letter-spacing: -0.5px;
+      color: #fff;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-style: normal;
+      font-size: max(14px, get-vw(20px));
+      line-height: 140%; /* 28px */
+      letter-spacing: -0.5px;
+      color: #fff;
+    }
+  }
+}

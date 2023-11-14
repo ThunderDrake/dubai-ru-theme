@@ -1,0 +1,119 @@
+.social-widget {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column-reverse;
+
+  &__button {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    background-color: #009345;
+    transition: all var(--transition-time);
+    animation: pulse 2s ease-out infinite;
+
+    @include small-tablet {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__icon {
+    width: 35px;
+    height: 32px;
+    transition: all var(--transition-time);
+  }
+
+  &__link-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: transform var(--transition-time);
+
+    svg {
+      fill: #fff;
+    }
+
+    &--tg {
+      background-color: #3483df;
+      transform: translateY(0%);
+      transition: all var(--transition-time);
+    }
+
+    &--wa {
+      background-color: #27d937;
+      transform: translateY(120%);
+      transition: all var(--transition-time);
+    }
+
+    &--phone {
+      background-color: rgb(0 77 115);
+      transform: translateY(240%);
+      transition: all var(--transition-time);
+    }
+  }
+
+  &__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    visibility: hidden;
+    transform: translateY(0);
+    transition: all var(--transition-time);
+
+    @include small-tablet {
+      transform: translateY(40%);
+    }
+  }
+
+  &:hover {
+    .social-widget__list {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-70%);
+
+      @include small-tablet {
+        transform: translateY(-65%);
+      }
+    }
+
+    .social-widget__link {
+      transform: translateY(0);
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(1.1, 1.1);
+  }
+
+  50% {
+    transform: scale(1, 1);
+  }
+}

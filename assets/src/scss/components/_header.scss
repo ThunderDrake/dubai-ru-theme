@@ -1,0 +1,220 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+
+  &__container {
+    display: flex;
+  }
+
+  &__small-logo {
+    display: block;
+    flex-shrink: 0;
+    margin-top: get-vw(24px);
+    width: get-vw(72px);
+    height: get-vw(72px);
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: get-vw(24px) 0;
+
+    @include mobile {
+      padding: 20px 0;
+    }
+  }
+
+  &__address {
+    display: flex;
+    align-items: center;
+
+    &-map {
+      margin-right: get-vw(20px);
+      width: get-vw(98px);
+      height: get-vw(98px);
+    }
+
+    &-title {
+      margin-bottom: get-vw(5px);
+      font-weight: 600;
+      line-height: 155%;
+      letter-spacing: -0.5px;
+    }
+
+    &-text {
+      margin-bottom: get-vw(5px);
+      font-size: max(14px, get-vw(20px));
+      line-height: 125%;
+      letter-spacing: -0.5px;
+    }
+
+    &-link {
+      font-size: max(12px, get-vw(16px));
+    }
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__link {
+    font-size: max(12px, get-vw(16px));
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    margin-right: get-vw(15px);
+
+    &-text {
+      position: relative;
+      margin-right: get-vw(10px);
+      max-width: get-vw(145px);
+      font-size: max(12px, get-vw(16px));
+      line-height: 140%;
+      letter-spacing: -0.5px;
+      color: #1c1c1c;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        margin-left: get-vw(5px);
+        border-radius: 50%;
+        width: get-vw(6px);
+        height: get-vw(6px);
+        background-color: #009345;
+        transform: translateY(-50%);
+      }
+
+      span {
+        font-weight: 600;
+      }
+
+      @include small-tablet {
+        max-width: none;
+      }
+    }
+
+    &-link {
+      display: block;
+      margin-right: get-vw(10px);
+
+      svg {
+        width: max(25px, get-vw(54px));
+        height: max(25px, get-vw(54px));
+      }
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__top-text {
+    position: relative;
+    margin-bottom: get-vw(8px);
+    font-size: max(12px, get-vw(16px));
+
+    &::before {
+      content: "";
+      display: inline-block;
+      margin-right: get-vw(5px);
+      border-radius: 50%;
+      width: get-vw(6px);
+      height: get-vw(6px);
+      background-color: #009345;
+      transform: translateY(-50%);
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: get-vw(10px);
+
+    &-flag {
+      margin-right: get-vw(5px);
+      width: get-vw(30px);
+      height: get-vw(15px);
+    }
+
+    &-link {
+      font-weight: 600;
+      font-style: normal;
+      font-size: max(16px, get-vw(24px));
+      line-height: 110%;
+      letter-spacing: -0.5px;
+      color: #009345;
+      transition: color 0.3s ease;
+
+      @include hover {
+        color: #00c15b;
+      }
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  width: max(60px, get-vw(110px));
+  height: max(50px, get-vw(100px));
+  line-height: 140%;
+  letter-spacing: -0.5px;
+  color: #1c1c1c;
+
+  &__container {
+    display: flex;
+    margin-right: get-vw(50px);
+  }
+
+  &__text {
+    margin-left: get-vw(25px);
+    width: get-vw(160px);
+    font-size: max(12px, get-vw(16px));
+
+    @include mobile {
+      width: 160px;
+    }
+  }
+
+  @include mobile {
+    width: 60px;
+    height: 55px;
+  }
+}
+
+.burger {
+  @include burger;
+
+  z-index: 10;
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}

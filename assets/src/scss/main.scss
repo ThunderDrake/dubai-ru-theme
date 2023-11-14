@@ -1,0 +1,31 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "components/header";
+@import "components/header-menu";
+@import "components/breadcrumbs";
+@import "components/hero";
+@import "components/services";
+@import "components/advantages";
+@import "components/flags-section";
+@import "components/steps";
+@import "components/form-section";
+@import "components/map-section";
+@import "components/team";
+@import "components/status-section";
+@import "components/about-section";
+@import "components/preferences";
+@import "components/socials-section";
+@import "components/news-section";
+@import "components/inner-hero";
+@import "components/contacts-map";
+@import "components/default-page";
+@import "components/tariffs";
+@import "components/quiz";
+@import "components/footer";
+@import "components/service-modal";
+@import "components/social-widget";

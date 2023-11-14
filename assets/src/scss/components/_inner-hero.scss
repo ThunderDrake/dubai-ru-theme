@@ -1,0 +1,24 @@
+.inner-hero {
+  position: relative;
+  border-bottom-right-radius: 64px;
+  border-bottom-left-radius: 64px;
+  padding-top: calc(var(--header-height) + max(50px, get-vw(60px)));
+  padding-bottom: max(68px, get-vw(120px));
+  background-image: url("../img/inner-hero-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-style: normal;
+    font-size: max(40px, get-vw(52px));
+    line-height: 130%;
+    letter-spacing: -0.5px;
+    color: #1c1c1c;
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+}

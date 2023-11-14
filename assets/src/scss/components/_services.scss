@@ -1,0 +1,110 @@
+.services {
+  margin-bottom: get-vw(70px);
+  padding-top: get-vw(44px);
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: max(22px, get-vw(68px));
+
+    @include mobile {
+      grid-template-columns: none;
+    }
+  }
+}
+
+.service {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: max(12px, get-vw(36px));
+  padding: max(25px, get-vw(42px));
+  color: #1c1c1c;
+  background: #f4f8fb;
+
+  &__title {
+    margin-bottom: max(10px, get-vw(20px));
+    font-weight: 700;
+    font-size: max(20px, get-vw(36px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+  }
+
+  &__icon {
+    position: absolute;
+    right: get-vw(37px);
+    top: get-vw(40px);
+    width: max(60px, get-vw(80px));
+    height: max(60px, get-vw(80px));
+  }
+
+  &__content-list {
+    margin-bottom: max(28px, get-vw(64px));
+    padding-left: get-vw(22px);
+  }
+
+  &__content-item {
+    position: relative;
+    font-weight: 400;
+    font-style: normal;
+    font-size: max(14px, get-vw(22px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: max(-14px, get-vw(-14px));
+      top: 50%;
+      border-radius: 50%;
+      width: 5px;
+      height: 5px;
+      background-color: currentcolor;
+      transform: translateY(-50%);
+
+      @include small-tablet {
+        left: -8px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: get-vw(12px);
+    }
+  }
+
+  &__footer {
+    margin-top: auto;
+  }
+
+  &__price {
+    margin-bottom: get-vw(12px);
+    font-weight: 600;
+    font-style: normal;
+    font-size: max(16px, get-vw(20px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+
+    @include mobile {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+
+    @include mobile {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+  &:hover {
+    color: #f4f8fb;
+    background: #1c1c1c;
+
+    .service__button {
+      color: #fff;
+      background-color: #009345;
+    }
+  }
+}

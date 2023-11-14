@@ -1,0 +1,8 @@
+import "./components/news-slider"
+import "./components/submenus"
+import "./components/burger-menu"
+import "./components/steps-slider"
+import "./components/team-slider"
+import "./components/status-slider"
+import "./components/form-validations"
+import "./components/modals"

@@ -1,0 +1,38 @@
+.breadcrumbs {
+  &__list {
+    display: flex;
+
+    @include mobile {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      &::after {
+        content: "/";
+        display: inline-block;
+        margin-right: 4px;
+        font-weight: 400;
+        font-style: normal;
+        font-size: max(18px, get-vw(24px));
+        line-height: 140%;
+        letter-spacing: -0.5px;
+        color: #6b6b6b;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-style: normal;
+    font-size: max(18px, get-vw(24px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #6b6b6b;
+
+    &--current {
+      color: #1c1c1c;
+    }
+  }
+}

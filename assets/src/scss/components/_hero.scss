@@ -1,0 +1,274 @@
+.hero {
+  position: relative;
+  padding-top: calc(var(--header-height) + get-vw(50px));
+  background-image: url("../../build/img/hero-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 110%;
+    height: get-vw(500px);
+    background-image: url("../../build/img/hero-decor.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__container {
+    position: relative;
+    height: 100%;
+  }
+
+  &__persons-image {
+    position: absolute;
+    right: get-vw(-40px);
+    bottom: 0;
+    width: get-vw(850px);
+
+    @include small-tablet {
+      width: 54.2vw;
+    }
+
+    @include mobile {
+      position: static;
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 200px;
+      width: 340px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    padding-bottom: get-vw(68px);
+    max-width: get-vw(800px);
+
+    @include tablet {
+      max-width: 500px;
+    }
+
+    @include mobile {
+      position: static;
+      max-width: none;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: max(20px, get-vw(45px));
+    font-weight: 400;
+    font-size: max(24px, get-vw(44px));
+    line-height: 130%;
+    letter-spacing: -0.5px;
+
+    span {
+      font-weight: 700;
+      color: #009345;
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    margin-bottom: max(40px, get-vw(85px));
+    padding-left: get-vw(100px);
+    max-width: get-vw(670px);
+    font-weight: 400;
+    font-style: normal;
+    font-size: max(16px, get-vw(24px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: get-vw(20px);
+      width: get-vw(70px);
+      height: get-vw(2px);
+      background-color: #009345;
+
+      @include mobile {
+        width: 36px;
+        height: 2px;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-item {
+      position: relative;
+      padding-left: 20px;
+      font-weight: 400;
+      font-size: max(16px, get-vw(24px));
+      line-height: 1.4;
+      letter-spacing: -0.5px;
+      color: #6b6b6b;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: max(8px, get-vw(10px));
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background: #6b6b6b;
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    span {
+      font-weight: 600;
+    }
+
+    @include mobile {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 50px;
+      max-width: max-content;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: get-vw(85px);
+
+    @include small-tablet {
+      flex-direction: column;
+      max-width: 60%;
+    }
+
+    @include mobile {
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: none;
+    }
+  }
+
+  &__small-text {
+    @include small-tablet {
+    }
+
+    position: relative;
+    margin-left: get-vw(30px);
+    font-weight: 400;
+    font-style: normal;
+    font-size: max(14px, get-vw(20px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #1c1c1c;
+    transform: translateY(get-vw(48px));
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: max(160px, get-vw(180px));
+      height: max(130px, get-vw(145px));
+      background-image: url("../img/hero__guide.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: translateY(-80%);
+
+      @include small-tablet {
+        left: 0;
+        top: 0;
+        width: 160px;
+        height: 130px;
+        transform: translate(0);
+      }
+    }
+
+    span {
+      font-weight: 600;
+    }
+
+    @include small-tablet {
+      padding-top: 30px;
+      padding-left: 180px;
+      text-align: left;
+    }
+
+    @include mobile {
+      margin-bottom: 40px;
+      margin-left: 0;
+      text-align: left;
+    }
+  }
+
+  &__advantages {
+    display: grid;
+    grid-template-columns: repeat(3, max(100px, get-vw(190px)));
+    gap: get-vw(80px);
+
+    &-title {
+      margin-bottom: get-vw(5px);
+      font-weight: 600;
+      font-size: max(28px, get-vw(44px));
+      line-height: 130%;
+      letter-spacing: -0.5px;
+      color: #1c1c1c;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: max(14px, get-vw(20px));
+      line-height: 140%;
+      letter-spacing: -0.5px;
+      color: #6b6b6b;
+    }
+
+    @include mobile {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 22px 25px;
+      width: 100%;
+      background-color: #fff;
+      gap: 22px 50px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 160px;
+        background-image: url("../img/hero-blur.png");
+        transform: translateY(-100%);
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__button {
+    @include mobile {
+      border-radius: 72px;
+      padding: 18px 24px;
+      font-size: 14px;
+
+      svg {
+        display: none;
+      }
+    }
+  }
+}

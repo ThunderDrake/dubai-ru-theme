@@ -1,0 +1,626 @@
+{
+    "key": "group_main_settings",
+    "title": "Общие настройки сайта",
+    "fields": [
+        {
+            "key": "field_65384e31a38c4",
+            "label": "Настройки меню",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_65384b70da668",
+            "label": "Пункт меню Accounting Services",
+            "name": "site_menu_accounting",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_653912522975a",
+                    "label": "Пункт меню",
+                    "name": "site_menu_item",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Добавить",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_65384c1eda66a",
+                            "label": "Связанная страница",
+                            "name": "linked-page",
+                            "aria-label": "",
+                            "type": "page_link",
+                            "instructions": "Выберите страницу, на которую должна быть ссылка в меню",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "page",
+                                "news"
+                            ],
+                            "post_status": "",
+                            "taxonomy": "",
+                            "allow_archives": 1,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "parent_repeater": "field_653912522975a"
+                        },
+                        {
+                            "key": "field_65384c4fda66b",
+                            "label": "Название пункта",
+                            "name": "item-name",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Укажите название пункта меню. Можете оставить поле пустым и тогда будет использован заголовок страницы",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_653912522975a"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_65384c78da66d",
+            "label": "Пункт меню Legal Services",
+            "name": "site_menu_legal",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_653912b35bc9d",
+                    "label": "Пункт меню",
+                    "name": "site_menu_item",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Добавить",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_65384c78da672",
+                            "label": "Связанная страница",
+                            "name": "linked-page",
+                            "aria-label": "",
+                            "type": "page_link",
+                            "instructions": "Выберите страницу, на которую должна быть ссылка в меню",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "page",
+                                "news"
+                            ],
+                            "post_status": "",
+                            "taxonomy": "",
+                            "allow_archives": 1,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "parent_repeater": "field_653912b35bc9d"
+                        },
+                        {
+                            "key": "field_65384c78da673",
+                            "label": "Название пункта",
+                            "name": "item-name",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Укажите название пункта меню. Можете оставить поле пустым и тогда будет использован заголовок страницы",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_653912b35bc9d"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_653bd2cc22636",
+            "label": "Пункт меню HR in UAE",
+            "name": "site_menu_hr",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_653bd2cc2263a",
+                    "label": "Пункт меню",
+                    "name": "site_menu_item",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Добавить",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_653bd2cc2263b",
+                            "label": "Связанная страница",
+                            "name": "linked-page",
+                            "aria-label": "",
+                            "type": "page_link",
+                            "instructions": "Выберите страницу, на которую должна быть ссылка в меню",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "page",
+                                "news"
+                            ],
+                            "post_status": "",
+                            "taxonomy": "",
+                            "allow_archives": 1,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "parent_repeater": "field_653bd2cc2263a"
+                        },
+                        {
+                            "key": "field_653bd2cc2263c",
+                            "label": "Название пункта",
+                            "name": "item-name",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Укажите название пункта меню. Можете оставить поле пустым и тогда будет использован заголовок страницы",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_653bd2cc2263a"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_653913055bca3",
+            "label": "Пункт меню Helpful information",
+            "name": "site_menu_info",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_653913055bca7",
+                    "label": "Пункт меню",
+                    "name": "site_menu_item",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Добавить",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_653913055bca8",
+                            "label": "Связанная страница",
+                            "name": "linked-page",
+                            "aria-label": "",
+                            "type": "page_link",
+                            "instructions": "Выберите страницу, на которую должна быть ссылка в меню",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "page",
+                                "news"
+                            ],
+                            "post_status": "",
+                            "taxonomy": "",
+                            "allow_archives": 1,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "parent_repeater": "field_653913055bca7"
+                        },
+                        {
+                            "key": "field_653913055bca9",
+                            "label": "Название пункта",
+                            "name": "item-name",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Укажите название пункта меню. Можете оставить поле пустым и тогда будет использован заголовок страницы",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_653913055bca7"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_65384e4fa38c5",
+            "label": "Контактная информация",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_65384e5ba38c6",
+            "label": "Контактный телефон",
+            "name": "site-phone",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Введите номер телефона с кодом страны",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "+ 971 (__) ___-__-__",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65384e98a38c7",
+            "label": "Адрес компании",
+            "name": "site-address",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Введите адрес компании текстом для отображения в шапке и подвале сайта",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65384eb0a38c8",
+            "label": "Ссылка на внешнюю карту",
+            "name": "site-map-url",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Укажите ссылку на внешнюю карту с расположением офиса компании",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65384ef0a38c9",
+            "label": "E-mail для связи в подвале",
+            "name": "site-email",
+            "aria-label": "",
+            "type": "email",
+            "instructions": "Укажите e-mail для связи",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_653856e9ccbf9",
+            "label": "Ссылка на WhatsApp",
+            "name": "site_wa-link",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Укажите ссылку на WhatsApp",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6538575bccbfa",
+            "label": "Ссылка на Telegram",
+            "name": "site_tg-link",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Укажите ссылку на Telegram",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6538576cccbfb",
+            "label": "Ссылка на YouTube",
+            "name": "site_yt-link",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Укажите ссылку на YouTube",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_653857b4ccbfc",
+            "label": "Ссылка на Instagram",
+            "name": "site_inst-link",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Укажите ссылку на Instagram",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_653857c4ccbfd",
+            "label": "Ссылка на Facebook",
+            "name": "site_fb-link",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Укажите ссылку на Facebook",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6539b23a389c6",
+            "label": "Адрес почты для получения писем",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6539b25f389c8",
+            "label": "Адрес почты для писем с форм",
+            "name": "site_callback-email",
+            "aria-label": "",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1698419415
+}

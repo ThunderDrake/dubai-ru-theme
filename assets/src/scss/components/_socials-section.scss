@@ -1,0 +1,114 @@
+.socials-section {
+  margin-bottom: max(56px, get-vw(80px));
+
+  &__wrapper {
+    padding-top: max(65px, get-vw(115px));
+    max-width: get-vw(1260px);
+
+    @include small-tablet {
+      max-width: none;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: max(14px, get-vw(24px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #009345;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+
+    @include mobile {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__title {
+    margin-bottom: get-vw(47px);
+    font-weight: 400;
+    font-style: normal;
+    font-size: max(22px, get-vw(44px));
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #6b6b6b;
+
+    span {
+      font-weight: 500;
+      color: #1c1c1c;
+    }
+  }
+
+  &__video {
+    position: relative;
+    flex-shrink: 0;
+    margin-right: get-vw(85px);
+    width: max-content;
+
+    img {
+      display: block;
+      border-radius: 12px;
+      width: get-vw(725px);
+      height: get-vw(440px);
+
+      @include mobile {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @include mobile {
+      margin-top: 26px;
+      width: 100%;
+    }
+  }
+
+  &__links {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &-item {
+      margin: 0 get-vw(10px);
+
+      svg {
+        width: max(58px, get-vw(112px));
+        height: max(58px, get-vw(112px));
+      }
+    }
+  }
+
+  &__list {
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: max(26px, get-vw(54px));
+      }
+    }
+
+    &-bullet {
+      margin-bottom: max(10px, get-vw(22px));
+      width: max(40px, get-vw(67px));
+      height: max(40px, get-vw(67px));
+    }
+
+    &-text {
+      font-weight: 400;
+      font-style: normal;
+      font-size: max(16px, get-vw(24px));
+      line-height: 140%;
+      letter-spacing: -0.5px;
+      color: #1c1c1c;
+
+      span {
+        font-weight: 500;
+        color: #009345;
+      }
+    }
+  }
+}
