@@ -3,13 +3,14 @@
     <div class="content-container contacts-map__content">
       <div class="contacts-map__left">
         <div class="contacts-map__wrapper">
-          <div class="contacts-map__title">Our contacts</div>
+          <div class="contacts-map__title">Наши контакты</div>
           <div class="contacts-map__phones">
-            <div class="footer__top-text">We are working now, call</div>
+            <div class="footer__top-text">Сейчас работаем, звоните</div>
             <div class="footer__phone">
               <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/dub-flag.png" class="footer__phone-flag"
                 width="30" height="15" alt="">
               <a class="footer__phone-link" href="tel:<?= Contacts::get_main_phone()['raw'] ?>"><?= Contacts::get_main_phone()['formated'] ?></a>
+              <a class="footer__phone-link" href="tel:<?= Contacts::get_second_phone()['raw'] ?>"><?= Contacts::get_second_phone()['formated'] ?></a>
             </div>
             <div class="footer__socials-block">
               <a class="footer__socials-link" href="<?= Contacts::get_wa_url() ?>" rel="nofollow noopener noreferrer">
@@ -65,9 +66,9 @@
             <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/address__map.png" class="footer__address-map"
               width="98" height="98" alt="">
             <div class="footer__address-content">
-              <div class="footer__address-title">Office address:</div>
+              <div class="footer__address-title">Адрес офиса:</div>
               <div class="footer__address-text"><?= Contacts::get_address() ?></div>
-              <a class="footer__address-link link-default" href="<?= Contacts::get_map_url() ?>">Show on map</a>
+              <a class="footer__address-link link-default" href="<?= Contacts::get_map_url() ?>">Показать на карте</a>
             </div>
           </div>
         </div>

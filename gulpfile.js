@@ -246,7 +246,7 @@ const htmlInclude = () => {
 
 const watchFiles = () => {
   browserSync.init({
-    proxy: 'dubai-tax.edit'
+    proxy: 'dubai-ru.edit'
   });
 
   watch(paths.srcScss, styles);

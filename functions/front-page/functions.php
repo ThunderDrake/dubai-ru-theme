@@ -26,6 +26,13 @@ class Contacts {
 		];
 	}
 
+	public static function get_second_phone() {
+		return [
+			'raw'      => get_field( 'site-second-phone', 'options' ),
+			'formated' => cth()->format_phone( get_field( 'site-second-phone', 'options' ) ),
+		];
+	}
+
 	public static function get_address() {
 		return get_field( 'site-address', 'options' );
 	}

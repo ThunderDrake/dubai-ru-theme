@@ -2,4 +2,5 @@
 /package-lock.json
 /.vscode
 /.idea
+/assets/build
 *.map

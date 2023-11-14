@@ -53,7 +53,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/logo.svg" class="header__logo logo" width="110"
               height="92" alt="">
             <span class="logo__text">
-              Legal and accounting services TAX~UAE
+              Юридические и бухгалтерские услуги TAX~UAE
             </span>
           </div>
 
@@ -61,16 +61,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/address__map.png" class="header__address-map"
               width="98" height="98" alt="">
             <div class="header__address-content">
-              <div class="header__address-title">Office address:</div>
+              <div class="header__address-title">Адрес офиса:</div>
               <div class="header__address-text"><?= Contacts::get_address() ?></div>
-              <a class="header__address-link link-default" href="<?= Contacts::get_map_url() ?>">Show on map</a>
+              <a class="header__address-link link-default" href="<?= Contacts::get_map_url() ?>">Показать на карте</a>
             </div>
           </div>
 
-          <a class="header__link link-default" href="<?= get_home_url() ?>/#quiz">Calculate the cost</a>
+          <button class="header__link link-default btn-reset" data-graph-path="consult-modal">Получить консультацию</button>
 
           <div class="header__socials">
-            <div class="header__socials-text">Ask a question, <br><span>we are online</span></div>
+            <div class="header__socials-text">Задайте вопрос, <br><span>мы онлайн</span></div>
             <a class="header__socials-link link-round-hover" href="<?= Contacts::get_wa_url() ?>" rel="nofollow noopener noreferrer">
               <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="54" height="54" rx="27" fill="#31B939" />
@@ -91,7 +91,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
 
           <div class="header__contacts">
-            <div class="header__top-text">We are working now, call</div>
+            <div class="header__top-text">Сейчас работаем, звоните</div>
+            <div class="header__phone">
+              <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/ru-flag.png" class="header__phone-flag"
+                width="30" height="15" alt="">
+              <a class="header__phone-link"
+                href="tel:<?= Contacts::get_second_phone()['formated'] ?>"><?= Contacts::get_second_phone()['raw'] ?></a>
+            </div>
             <div class="header__phone">
               <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/dub-flag.png" class="header__phone-flag"
                 width="30" height="15" alt="">
@@ -107,9 +113,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="header-menu" data-menu>
             <nav class="header-menu__nav nav">
               <ul class="nav__list list-reset">
-                <li class="nav__item"><a href="/" class="nav__link nav__link--main">Main</a></li>
+                <li class="nav__item"><a href="/" class="nav__link nav__link--main">Главная</a></li>
                 <li class="nav__item">
-                  <span class="nav__link nav__link--dropdown">Accounting services</span>
+                  <span class="nav__link nav__link--dropdown">Бухгалтерские услуги</span>
                   <div class="nav__item-submenu">
                     <?php foreach($site_menu_accounting as $item): ?>
                     <?php
@@ -126,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   </div>
                 </li>
                 <li class="nav__item">
-                  <span class="nav__link nav__link--dropdown">Legal services</span>
+                  <span class="nav__link nav__link--dropdown">Юридические услуги</span>
                   <div class="nav__item-submenu">
                     <?php foreach($site_menu_legal as $item): ?>
                     <?php
@@ -143,7 +149,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   </div>
                 </li>
                 <li class="nav__item">
-                  <span class="nav__link nav__link--dropdown">HR in UAE</span>
+                  <span class="nav__link nav__link--dropdown">HR в UAE</span>
                   <div class="nav__item-submenu">
                     <?php foreach($site_menu_hr as $item): ?>
                     <?php
@@ -160,7 +166,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   </div>
                 </li>
                 <li class="nav__item">
-                  <span class="nav__link nav__link--dropdown">Helpful information</span>
+                  <span class="nav__link nav__link--dropdown">Полезная информация</span>
                   <div class="nav__item-submenu">
                     <?php foreach($site_menu_info as $item): ?>
                     <?php
@@ -176,7 +182,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <?php endforeach; ?>
                   </div>
                 </li>
-                <li class="nav__item"><a href="/contacts/" class="nav__link">Contacts</a></li>
+                <li class="nav__item"><a href="/contacts/" class="nav__link">Контакты</a></li>
               </ul>
             </nav>
           </div>
