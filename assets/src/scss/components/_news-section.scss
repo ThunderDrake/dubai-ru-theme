@@ -79,6 +79,13 @@
       }
     }
   }
+
+  &__button {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: max-content;
+  }
 }
 
 .news {
@@ -96,8 +103,8 @@
   &__image {
     display: block;
     border-radius: max(12px, get-vw(24px));
-    aspect-ratio: 4/3;
     width: 100%;
+    aspect-ratio: 4/3;
 
     &-wrapper {
       position: relative;

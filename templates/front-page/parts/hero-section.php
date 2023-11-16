@@ -2,44 +2,38 @@
   <div class="content-container hero__container">
     <div class="hero__content">
       <h1 class="hero__title" data-aos="fade-up">
-        <span>We will register your business in the UAE</span> with a further strategy
-        for <span>2 weeks</span> on a turnkey basis</h1>
+        <span>Зарегистрируем ваш бизнес в ОАЭ</span>
+        за <span>2 недели</span> под ключ</h1>
       <div class="hero__subtitle" data-aos="fade-up" data-aos-delay="300">
         <div class="hero__subtitle-list">
           <div class="hero__subtitle-item">
-            We guarantee the opening of a bank account.
+            Гарантируем открытие счета в банке.
           </div>
           <div class="hero__subtitle-item">
-            Preliminary consultation of an accountant <span>for free</span>
+            Предварительная консультация бухгалтера <span>бесплатно</span>.
           </div>
         </div>
 
       </div>
       <div class="hero__footer">
-        <a class="hero__button btn-reset btn--main" href="#quiz">
-          Calculate the cost of service
-          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
-            <path d="M26.3582 12.7588L1.3584 12.7588L1.3584 15.4762L26.3582 15.4762L26.3582 12.7588Z" fill="white" />
-            <path
-              d="M21.5898 20.8462L19.6684 18.9247L24.4336 14.1594L19.6684 9.39414L21.5898 7.47266L28.2766 14.1594L21.5898 20.8462Z"
-              fill="white" />
-          </svg>
-        </a>
+        <button class="hero__button btn-reset btn--main btn-reset" data-graph-path="consult-modal">
+          Получить консультацию
+        </button>
         <div class="hero__small-text">
-          Get a free guide after calculating <span>“How to open your business in the UAE”</span></div>
+        Бесплатно получите гайд после расчета <span>“Как открыть свой бизнес в ОАЭ”</span></div>
       </div>
       <div class="hero__advantages">
         <div class="hero__advantages-item">
           <div class="hero__advantages-title">5300 +</div>
-          <div class="hero__advantages-text">Consultations held</div>
+          <div class="hero__advantages-text">Проведенных консультаций</div>
         </div>
         <div class="hero__advantages-item">
           <div class="hero__advantages-title">15</div>
-          <div class="hero__advantages-text">Global Partners in the UAE</div>
+          <div class="hero__advantages-text">Глобальных партнеров в ОАЭ</div>
         </div>
         <div class="hero__advantages-item">
           <div class="hero__advantages-title">450+</div>
-          <div class="hero__advantages-text">Companies registered</div>
+          <div class="hero__advantages-text">Компаний зарегистрировано</div>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ $news_list = get_posts([
 <section class="news-section">
   <div class="news-section__container content-container">
     <div class="news-section__header">
-      <h2 class="news-section__title" data-aos="fade-up">And we talk about the <span>nuances of accounting</span>, <b>share useful tools</b></h2>
+      <h2 class="news-section__title" data-aos="fade-up">И рассказываем о нюансах бухгалтерского учета, делимся полезными инструментами</h2>
       <div class="news-section__slider-controls">
         <button class="btn-reset news-section__slider-button news-section__slider-button--prev">
           <svg class="news-section__slider-button-icon" width="29" height="16">
@@ -37,7 +37,7 @@ $news_list = get_posts([
               <div class="news__content">
                 <div class="news__title"><?php the_title() ?></div>
                 <div class="news__description"><?php the_excerpt() ?></div>
-                <a class="news__link" href="<?= get_permalink() ?>">More</a>
+                <a class="news__link" href="<?= get_permalink() ?>">Больше</a>
               </div>
             </div>
          </div>
@@ -46,5 +46,7 @@ $news_list = get_posts([
 
       </div>
     </div>
+
+    <a class="news-section__button btn-reset btn--main" href="/news/">Все новости</a>
   </div>
 </section>

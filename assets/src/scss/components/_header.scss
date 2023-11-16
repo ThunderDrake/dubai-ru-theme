@@ -192,6 +192,10 @@
     margin-right: get-vw(50px);
   }
 
+  &__link {
+    display: block;
+  }
+
   &__text {
     margin-left: get-vw(25px);
     width: get-vw(160px);

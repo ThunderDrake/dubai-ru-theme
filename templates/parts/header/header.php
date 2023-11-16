@@ -50,8 +50,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           height="72" alt="">
         <div class="content-container">
           <div class="logo__container">
-            <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/logo.svg" class="header__logo logo" width="110"
-              height="92" alt="">
+            <a href="/" class="logo__link">
+              <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/logo.svg" class="header__logo logo" width="110"
+                height="92" alt="">
+            </a>
             <span class="logo__text">
               Юридические и бухгалтерские услуги TAX~UAE
             </span>
@@ -106,6 +108,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </div>
 
+          <?php if(!get_field('menu_vision', 'options')): ?>
           <button class="burger header__burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
             <span class="burger__line"></span>
           </button>
@@ -186,6 +189,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </ul>
             </nav>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </header>

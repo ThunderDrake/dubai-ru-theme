@@ -9,98 +9,99 @@
 <section class="tariffs">
   <div class="tariffs__container container">
     <div class="tariffs__header">
-    Registration of corporate tax <span>as a gift</span>,<br>
-    when buying an annual package of services.<br>
-    Preliminary consultation of an accountant is free of charge.
+    Регистрация корпоративного налога в <span>подарок</span>,<br>
+    при покупке годового пакета услуг.<br>
+    Предварительная консультация бухгалтера бесплатно.
     </div>
     <div class="tariffs__grid">
       <div class="tariffs__item tariff">
-        <div class="tariff__title">Basic</div>
-        <div class="tariff__subtitle">Small business (up to 50 operations per month) without TRN VAT</div>
-        <div class="tariff__price">1500 AED/month (VAT not included)</div>
-        <div class="tariff__item">initial consultation 45 minutes (Zoom or other messenger)</div>
-        <div class="tariff__small-text">* We fill out a business questionnaire, discuss a convenient model of cooperation, identify important points in the taxation of your business and what you need to focus on.</div>
-        <div class="tariff__item">software acquisition</div>
-        <div class="tariff__small-text">* Paid separately. We give recommendations on Software products that are certified in the UAE and allowed to be used</div>
-        <div class="tariff__item">weekly exchange of primary documentation via email, disk or WhatsApp, Telegram (optional)</div>
-        <div class="tariff__item">daily online access to your software product, where you can track how the accounting support of your business is conducted by our specialists</div>
-        <div class="tariff__item">monthly reports (balance sheet, profit and loss statement, cash flow statement)</div>
-        <div class="tariff__item">one-time online session and discussion of accumulated issues (45 minutes)</div>
-        <div class="tariff__item">annual preparation of the corporate tax report and financial statements</div>
-        <div class="tariff__item tariff__item--stroke">quarterly preparation of the VAT tax report</div>
-        <div class="tariff__item tariff__item--stroke">examination of incoming invoices for the legality of applying the VAT deduction</div>
+        <div class="tariff__title">Базовый</div>
+        <div class="tariff__subtitle">Малый бизнес (до 50 операций в месяц) без TRN VAT</div>
+        <div class="tariff__price">1500 AED/месяц (НДС не включен)</div>
+        <div class="tariff__item">первичная консультация 45 минут (Zoom либо другой месенджер)</div>
+        <div class="tariff__small-text">* Заполняем анкету по бизнесу, обговариваем удобную модель сотрудничества , обозначаем важные моменты в налогообложении именно вашего бизнеса и то, на чем необходимо сделать акцент.</div>
+        <div class="tariff__item">приобретение программного обеспечения</div>
+        <div class="tariff__small-text">* Оплачивается отдельно. Даем рекомендации по Программным продуктам, которые сертифицированы в ОАЭ и допущены к использованию</div>
+        <div class="tariff__item">еженедельный обмен первичной документацией посредством email, диск или WhatsApp, Telegram (на выбор)</div>
+        <div class="tariff__item">ежедневный доступ онлайн к вашему программному продукту, где вы можете отслеживать , как ведется бухгалтерское сопровождение вашего бизнеса нашими специалистами</div>
+        <div class="tariff__item">ежемесячные отчеты (баланс, отчет о прибылях и убытках, отчет о движении денежных средств)</div>
+        <div class="tariff__item">однократная сессия онлайн и обсуждение накопившихся вопросов (45 минут)</div>
+        <div class="tariff__item">ежегодное составление налогового отчета о корпоративном налоге и финансовой отчетности</div>
+        <div class="tariff__item tariff__item--stroke">ежеквартальное составление налогового отчета по НДС</div>
+        <div class="tariff__item tariff__item--stroke">экспертиза входящих инвойсов на предмет правомерности применения вычета по НДС</div>
         <div class="tariff__bordered">
-          The package does not include<br>
-          - daily calls<br>
-          - tax planning<br>
-          - examination of contracts<br>
-          - consulting on business schemes<br>
-          - consultations on labor law, customs law<br>
-          - preparation of VAT declaration
+          В пакет не включены:<br>
+          - ежедневные звонки<br>
+          - налоговое планирование<br>
+          - экспертизы контрактов<br>
+          - консультация по схемам бизнеса<br>
+          - консультация по трудовому праву, таможенному праву<br>
+          - составление декларации по НДС
         </div>
       </div>
 
       <div class="tariffs__item tariff">
-        <div class="tariff__title">Standard</div>
-        <div class="tariff__subtitle">Small business (up to 50 operations per month) with TRN VAT</div>
-        <div class="tariff__price">2500 AED/month (VAT not included)</div>
-        <div class="tariff__item">initial consultation 45 minutes (Zoom or other messenger)</div>
-        <div class="tariff__small-text">* We fill out a business questionnaire, discuss a convenient model of cooperation, identify important points in the taxation of your business and what you need to focus on.</div>
-        <div class="tariff__item">software acquisition</div>
-        <div class="tariff__small-text">* Paid separately. We give recommendations on Software products that are certified in the UAE and allowed to be used</div>
-        <div class="tariff__item">weekly exchange of primary documentation via email, disk or WhatsApp, Telegram (optional)</div>
-        <div class="tariff__item">daily online access to your software product, where you can track how the accounting support of your business is conducted by our specialists</div>
-        <div class="tariff__item">monthly reports (balance sheet, profit and loss statement, cash flow statement)</div>
-        <div class="tariff__item">one-time online session and discussion of accumulated issues (45 minutes)</div>
-        <div class="tariff__item">annual preparation of the corporate tax report and financial statements</div>
-        <div class="tariff__item">quarterly preparation of the VAT tax report</div>
-        <div class="tariff__item">examination of incoming invoices for the legality of applying the VAT deduction</div>
+        <div class="tariff__title">Стандартный</div>
+        <div class="tariff__subtitle">Малый бизнес (до 50 операций в месяц) c TRN VAT</div>
+        <div class="tariff__price">2500 AED/месяц (НДС не включен)</div>
+        <div class="tariff__item">первичная консультация 45 минут (Zoom либо другой месенджер)</div>
+        <div class="tariff__small-text">* Заполняем анкету по бизнесу, обговариваем удобную модель сотрудничества , обозначаем важные моменты в налогообложении именно вашего бизнеса и то, на чем необходимо сделать акцент.</div>
+        <div class="tariff__item">приобретение программного обеспечения</div>
+        <div class="tariff__small-text">* Оплачивается отдельно. Даем рекомендации по Программным продуктам, которые сертифицированы в ОАЭ и допущены к использованию</div>
+        <div class="tariff__item">еженедельный обмен первичной документацией посредством email, диск или WhatsApp, Telegram (на выбор)</div>
+        <div class="tariff__item">ежедневный доступ онлайн к вашему программному продукту, где вы можете отслеживать , как ведется бухгалтерское сопровождение вашего бизнеса нашими специалистами</div>
+        <div class="tariff__item">ежемесячные отчеты (баланс, отчет о прибылях и убытках, отчет о движении денежных средств)</div>
+        <div class="tariff__item">однократная сессия онлайн и обсуждение накопившихся вопросов (45 минут)</div>
+        <div class="tariff__item">ежегодное составление налогового отчета о корпоративном налоге и финансовой отчетности</div>
+        <div class="tariff__item">ежеквартальное составление налогового отчета по НДС</div>
+        <div class="tariff__item">экспертиза входящих инвойсов на предмет правомерности применения вычета по НДС</div>
         <div class="tariff__bordered">
-          The package does not include<br>
-          - daily calls<br>
-          - tax planning<br>
-          - examination of contracts<br>
-          - consulting on business schemes<br>
-          - consultations on labor law, customs law
+          В пакет не включены:<br>
+          - ежедневные звонки<br>
+          - налоговое планирование<br>
+          - экспертизы контрактов<br>
+          - консультация по схемам бизнеса<br>
+          - консультация по трудовому праву, таможенному праву
         </div>
       </div>
 
       <div class="tariffs__item tariff">
-        <div class="tariff__title">Professional</div>
-        <div class="tariff__subtitle">Medium business (up to 100 operations per month) with TRN VAT</div>
-        <div class="tariff__price">3500 AED/month (VAT not included)</div>
-        <div class="tariff__item">initial consultation 45 minutes (Zoom or other messenger)</div>
-        <div class="tariff__small-text">* We fill out a business questionnaire, discuss a convenient model of cooperation, identify important points in the taxation of your business and what you need to focus on.</div>
-        <div class="tariff__item">software acquisition</div>
-        <div class="tariff__small-text">* Paid separately. We give recommendations on Software products that are certified in the UAE and allowed to be used</div>
-        <div class="tariff__item">weekly exchange of primary documentation via email, disk or WhatsApp, Telegram (optional)</div>
-        <div class="tariff__item">daily online access to your software product, where you can track how the accounting support of your business is conducted by our specialists</div>
-        <div class="tariff__item">monthly reports (balance sheet, profit and loss statement, cash flow statement)</div>
-        <div class="tariff__item">one-time online session and discussion of accumulated issues (45 minutes)</div>
-        <div class="tariff__item">annual preparation of the corporate tax report and financial statements</div>
-        <div class="tariff__item">quarterly preparation of the VAT tax report</div>
-        <div class="tariff__item">examination of incoming invoices for the legality of applying the VAT deduction</div>
+        <div class="tariff__title">Профессиональный</div>
+        <div class="tariff__subtitle">Средний бизнес (до 100 операций в месяц) c TRN VAT</div>
+        <div class="tariff__price">3500 AED/месяц (НДС не включен)</div>
+        <div class="tariff__item">первичная консультация 45 минут (Zoom либо другой месенджер)</div>
+        <div class="tariff__small-text">* Заполняем анкету по бизнесу, обговариваем удобную модель сотрудничества , обозначаем важные моменты в налогообложении именно вашего бизнеса и то, на чем необходимо сделать акцент.</div>
+        <div class="tariff__item">приобретение программного обеспечения</div>
+        <div class="tariff__small-text">* Оплачивается отдельно. Даем рекомендации по Программным продуктам, которые сертифицированы в ОАЭ и допущены к использованию</div>
+        <div class="tariff__item">еженедельный обмен первичной документацией посредством email, диск или WhatsApp, Telegram (на выбор)</div>
+        <div class="tariff__item">ежедневный доступ онлайн к вашему программному продукту, где вы можете отслеживать , как ведется бухгалтерское сопровождение вашего бизнеса нашими специалистами</div>
+        <div class="tariff__item">ежемесячные отчеты (баланс, отчет о прибылях и убытках, отчет о движении денежных средств)</div>
+        <div class="tariff__item">однократная сессия онлайн и обсуждение накопившихся вопросов (45 минут)</div>
+        <div class="tariff__item">ежегодное составление налогового отчета о корпоративном налоге и финансовой отчетности</div>
+        <div class="tariff__item">ежеквартальное составление налогового отчета по НДС</div>
+        <div class="tariff__item">экспертиза входящих инвойсов на предмет правомерности применения вычета по НДС</div>
         <div class="tariff__bordered">
-          The package does not include<br>
-          - daily calls<br>
-          - tax planning<br>
-          - examination of contracts<br>
-          - consulting on business schemes<br>
-          - consultations on labor law, customs law<br>
-          - preparation of VAT declaration
+          В пакет не включены:<br>
+          - ежедневные звонки<br>
+          - налоговое планирование<br>
+          - экспертизы контрактов<br>
+          - консультация по схемам бизнеса<br>
+          - консультация по трудовому праву, таможенному праву<br>
+          - составление декларации по НДС
         </div>
       </div>
 
       <div class="tariffs__item tariff tariff--last">
-        <div class="tariff__title">Maximal</div>
-        <div class="tariff__subtitle">Medium business (up to 100 operations per month) with TRN VAT</div>
-        <div class="tariff__price">5500 AED/month (VAT not included)</div>
+        <div class="tariff__title">Максимальный</div>
+        <div class="tariff__subtitle">Средний бизнес (до 100 операций в месяц) c TRN VAT</div>
+        <div class="tariff__price">5500 AED/месяц (НДС не включен)</div>
 
         <div class="tariff__bordered">
-          It includes all the points of the professional tariff, as well as full support of your business in all aspects. Compilation of financial statements on your request, assistance in any matters of interest (tax audits, examination of contracts (up to 3 sheets), assistance in preparing documents for the bank, answers to questions on actual tax changes in the tax Administration, recommendations for doing business, assistance in tax planning, communication on a daily basis in WhatsApp, Telegram, 1 session online on questions of interest to you (45 minutes), recommendations for other questions.
+        Включает в себя все пункты профессионального тарифа, а также полное сопровождение вашего бизнеса по всем аспектам.
+        Составление финансовой отчетности по вашему запросу, помощь в вопросах любого характера (налоговые проверки, экспертиза контрактов (до 3 листов), помощь в подготовке документов для банка, ответы на вопросы по актуальным налоговым изменениям в ОАЭ, рекомендации по ведению бизнеса, помощь в налоговом планировании, общение на ежедневной основе в WhatsApp, Telegram, 1 сессия онлайн по интересующим вас вопросам(45 минут), рекомендации по прочим вопросам.
 
           <div class="tariff__bordered-footer">
-            When paying for accounting support for 1 year , the first month <span>as a gift</span>
+            При оплате бухгалтерского сопровождения на 1 год , первый месяц <span>в подарок</span>
           </div>
         </div>
       </div>

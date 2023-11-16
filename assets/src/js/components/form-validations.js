@@ -23,7 +23,7 @@ const validateForms = (selector, rules, url, nonce, action, afterSend) => {
       utilsScript: utils,
       separateDialCode: true,
       hiddenInput: "full",
-      initialCountry: 'ae'
+      initialCountry: 'ru'
     })
 
     function getCodeMask(selector) {
@@ -216,14 +216,45 @@ const serviceAccountingFormRules = [
   },
 ];
 
-const guideFormRules = [
+const serviceConsultFormRules = [
   {
-    ruleSelector: '.form-section__form-input--mail',
+    ruleSelector: '.service-modal--consult .service-modal__form-input--name',
+    rules: [
+      {
+        rule: 'minLength',
+        value: 3
+      },
+      {
+        rule: 'required',
+        value: true,
+        errorMessage: 'Заполните имя!'
+      }
+    ]
+  },
+  {
+    ruleSelector: '.service-modal--consult .service-modal__form-input--tel',
+    tel: true,
+    telError: 'Введите корректный телефон',
     rules: [
       {
         rule: 'required',
         value: true,
-        errorMessage: 'Заполните email!'
+        errorMessage: 'Заполните телефон!'
+      }
+    ]
+  },
+];
+
+const guideFormRules = [
+  {
+    ruleSelector: '.form-section__form-input--tel',
+    tel: true,
+    telError: 'Введите корректный телефон',
+    rules: [
+      {
+        rule: 'required',
+        value: true,
+        errorMessage: 'Заполните телефон!'
       }
     ]
   },
@@ -243,4 +274,5 @@ validateForms('[data-form="footer-form"]', footerFormRules, form_object.url, for
 validateForms('[data-form="section-form"]', sectionFormRules, form_object.url, form_object.nonce, 'form_action');
 validateForms('[data-form="legal-form"]', serviceLegalFormRules, form_object.url, form_object.nonce, 'form_action');
 validateForms('[data-form="accounting-form"]', serviceAccountingFormRules, form_object.url, form_object.nonce, 'form_action');
+validateForms('[data-form="consult-form"]', serviceConsultFormRules, form_object.url, form_object.nonce, 'form_action');
 validateForms('[data-form="guide-form"]', guideFormRules, form_object.url, form_object.nonce, 'form_action');

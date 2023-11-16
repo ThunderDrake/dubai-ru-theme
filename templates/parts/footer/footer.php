@@ -70,6 +70,7 @@ $site_menu_legal = get_field('site_menu_legal', 'option')['site_menu_item'];
     </div>
 
     <div class="footer__col">
+    <?php if(!get_field('menu_vision', 'options')): ?>
       <div class="footer__nav-title">Бухгалтерские услуги</div>
       <ul class="list-reset footer__nav">
         <?php foreach($site_menu_accounting as $item): ?>
@@ -87,9 +88,11 @@ $site_menu_legal = get_field('site_menu_legal', 'option')['site_menu_item'];
         </li>
         <?php endforeach; ?>
       </ul>
+    <?php endif; ?>
     </div>
 
     <div class="footer__col">
+    <?php if(!get_field('menu_vision', 'options')): ?>
       <div class="footer__nav-title">Юридические услуги</div>
       <ul class="list-reset footer__nav">
         <?php foreach($site_menu_legal as $item): ?>
@@ -107,6 +110,7 @@ $site_menu_legal = get_field('site_menu_legal', 'option')['site_menu_item'];
         </li>
         <?php endforeach; ?>
       </ul>
+    <?php endif; ?>
     </div>
 
     <div class="footer__col">
@@ -153,9 +157,9 @@ $site_menu_legal = get_field('site_menu_legal', 'option')['site_menu_item'];
       <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/address__map.png" class="footer__address-map"
         width="98" height="98" alt="">
       <div class="footer__address-content">
-        <div class="footer__address-title">Office address:</div>
+        <div class="footer__address-title">Адрес офиса:</div>
         <div class="footer__address-text"><?= Contacts::get_address() ?></div>
-        <a class="footer__address-link link-default" href="<?= Contacts::get_map_url() ?>">Show on map</a>
+        <a class="footer__address-link link-default" href="<?= Contacts::get_map_url() ?>">Показать на карте</a>
       </div>
     </div>
 
@@ -164,9 +168,6 @@ $site_menu_legal = get_field('site_menu_legal', 'option')['site_menu_item'];
     <a class="footer__terms" href="<?= get_privacy_policy_url() ?>">Политика конфиденциальности</a>
   </div>
 </footer>
-<div class="lang-switcher">
-  <?php echo do_shortcode('[language-switcher]') ?>
-</div>
 <?php ct()->template('/parts/modals/modals-section.php') ?>
 <?php wp_footer() ?>
 </div>

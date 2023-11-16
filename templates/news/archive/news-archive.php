@@ -6,15 +6,15 @@ ct()->header()
     <div class="breadcrumbs">
       <ul class="breadcrumbs__list list-reset">
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="/">Main</a>
+          <a class="breadcrumbs__link" href="/">Главная</a>
         </li>
         <li class="breadcrumbs__item">
-          <span class="breadcrumbs__link breadcrumbs__link--current">News</span>
+          <span class="breadcrumbs__link breadcrumbs__link--current">Новости</span>
         </li>
       </ul>
     </div>
 
-    <h1 class="inner-hero__title">News</h1>
+    <h1 class="inner-hero__title">Новости</h1>
   </div>
 </section>
 <section class="page">
@@ -33,7 +33,7 @@ ct()->header()
               <div class="news__content">
                 <div class="news__title"><?php the_title() ?></div>
                 <div class="news__description"><?php the_excerpt() ?></div>
-                <a class="news__link" href="<?= get_permalink() ?>">More</a>
+                <a class="news__link" href="<?= get_permalink() ?>">Больше</a>
               </div>
             </div>
           </div>

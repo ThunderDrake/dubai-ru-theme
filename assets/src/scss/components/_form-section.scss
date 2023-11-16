@@ -128,6 +128,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: get-vw(27px) get-vw(20px);
 
+    .iti {
+      .form-section__form-input--tel {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
     .custom-checkbox {
       @include custom-checkbox;
     }

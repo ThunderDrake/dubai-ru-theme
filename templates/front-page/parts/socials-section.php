@@ -1,9 +1,8 @@
 <section class="socials-section">
   <div class="socials-section__container content-container">
     <div class="socials-section__wrapper">
-      <div class="socials-section__subtitle" data-aos="fade-right">We are active on social networks</div>
-      <div class="socials-section__title" data-aos="fade-up" data-aos-delay="500">We not only show the work process in an ideal format, <span>but also talk
-          about the difficulties and how we deal with them</span></div>
+      <div class="socials-section__subtitle" data-aos="fade-right">Мы активно ведем соцсети</div>
+      <div class="socials-section__title" data-aos="fade-up" data-aos-delay="500">Мы не только показываем процесс работы в идеальном формате, <span>но и рассказываем о трудностях и как мы с ними справляемся</span></div>
       <div class="socials-section__content">
         <div class="socials-section__video">
           <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/socials-section__video.jpg"
@@ -47,11 +46,11 @@
         <div class="socials-section__list">
           <div class="socials-section__list-item">
             <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/socials-section__list-bullet.svg" class="socials-section__list-bullet" width="67" height="67" alt="">
-            <div class="socials-section__list-text">We write <span>useful</span> articles and news on the topic of doing business in the UAE</div>
+            <div class="socials-section__list-text">Пишем <span>полезные</span> статьи и новости на тему ведения бизнеса в ОАЭ</div>
           </div>
           <div class="socials-section__list-item">
           <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/socials-section__list-bullet.svg" class="socials-section__list-bullet" width="67" height="67" alt="">
-            <div class="socials-section__list-text">We post a video on the topic of <span>opening and running a business</span> in the UAE</div>
+            <div class="socials-section__list-text">Размещаем видео на тему <span>открытия и ведения бизнеса</span> в ОАЭ</div>
           </div>
         </div>
       </div>

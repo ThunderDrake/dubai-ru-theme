@@ -1,5 +1,5 @@
 {
-    "key": "group_main_settings",
+    "key": "group_ru_settings",
     "title": "Общие настройки сайта",
     "fields": [
         {
@@ -21,7 +21,7 @@
         },
         {
             "key": "field_65384b70da668",
-            "label": "Пункт меню Accounting Services",
+            "label": "Пункт меню Бухгалтерские услуги",
             "name": "site_menu_accounting",
             "aria-label": "",
             "type": "group",
@@ -109,7 +109,7 @@
         },
         {
             "key": "field_65384c78da66d",
-            "label": "Пункт меню Legal Services",
+            "label": "Пункт меню Юридические услуги",
             "name": "site_menu_legal",
             "aria-label": "",
             "type": "group",
@@ -197,7 +197,7 @@
         },
         {
             "key": "field_653bd2cc22636",
-            "label": "Пункт меню HR in UAE",
+            "label": "Пункт меню HR в UAE",
             "name": "site_menu_hr",
             "aria-label": "",
             "type": "group",
@@ -285,7 +285,7 @@
         },
         {
             "key": "field_653913055bca3",
-            "label": "Пункт меню Helpful information",
+            "label": "Пункт меню Полезная информация",
             "name": "site_menu_info",
             "aria-label": "",
             "type": "group",
@@ -405,6 +405,26 @@
             "default_value": "",
             "maxlength": "",
             "placeholder": "+ 971 (__) ___-__-__",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_655640d21dfb7",
+            "label": "Контактный телефон (Российский)",
+            "name": "site-second-phone",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Введите номер телефона с кодом страны",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "+7 (__) ___-__-__",
             "prepend": "",
             "append": ""
         },
@@ -602,6 +622,26 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_655652068b75e",
+            "label": "Скрыть меню с сайта?",
+            "name": "menu_vision",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -622,5 +662,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698419415
+    "modified": 1700155933
 }

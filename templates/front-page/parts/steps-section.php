@@ -1,8 +1,7 @@
 <section class="steps">
   <div class="steps__container container">
     <div class="content-container">
-      <h2 class="steps__title" data-aos="fade-up"><span>Comprehensive management of your business</span> (from creation to accounting) -
-        just 4 steps</h2>
+      <h2 class="steps__title" data-aos="fade-up"><span>Комплексное ведение Вашего бизнеса</span> (от создания до бухгалтерии) - всего 4 шага</h2>
       <div class="steps__slider-controls">
         <button class="btn-reset steps__slider-button steps__slider-button--prev">
           <svg class="steps__slider-button-icon" width="29" height="16">
@@ -19,35 +18,30 @@
         <div class="swiper-wrapper steps__list">
           <div class="swiper-slide steps__slider-item">
             <div class="steps__item step step--first">
-              <span class="step__number">1 step</span>
-              <div class="step__text"><span>Free preliminary consultation</span> from our specialist immediately upon
-                application</div>
-              <a class="btn-reset step__button btn btn--main" href="#callback-section">Get a
-                consultation</a>
+              <span class="step__number">1 шаг</span>
+              <div class="step__text"><span>Бесплатная предварительная консультация</span> от нашего специалиста сразу в момент обращения</div>
+              <button class="btn-reset step__button btn btn--main btn-reset" data-graph-path="consult-modal">Получить консультацию</button>
             </div>
           </div>
           <div class="swiper-slide steps__slider-item">
             <div class="steps__item step">
-              <span class="step__number">2 step</span>
-              <div class="step__title">We conclude an agreement we issue an invoice</div>
-              <div class="step__text">You are fully legally protected. <span>We are licensed for legal</span> and
-                accounting services. <span>We guarantee</span> opening a bank account in the UAE</div>
+              <span class="step__number">2 шаг</span>
+              <div class="step__title">Заключаем договор,оформляем инвойс</div>
+              <div class="step__text">Вы полностью юридически защищены. Мы имеем лицензию на юридические и бухгалтерские услуги. <span>Гарантируем открытие счета в банке</span> на территории ОАЭ</div>
             </div>
           </div>
           <div class="swiper-slide steps__slider-item">
             <div class="steps__item step">
-              <span class="step__number">3 step</span>
-              <div class="step__title">Preparation<br>to work</div>
-              <div class="step__text">We draw up a work plan. We will provide lists and registration information. We
-                create and configure ZohoBooks - a secure accounting solution</div>
+              <span class="step__number">3 шаг</span>
+              <div class="step__title">Подготовка<br>к работе</div>
+              <div class="step__text">Составляем план работы. Предоставим списки и информацию для регистрации. Создаем и настраиваем ZohoBooks - безопасное бухгалтерское решение</div>
             </div>
           </div>
           <div class="swiper-slide steps__slider-item">
             <div class="steps__item step step--last">
-              <span class="step__number">4 step</span>
-              <div class="step__title">Your business and accounting are in the right hands!</div>
-              <div class="step__text">We register a business, obtain a license and constituent documents of your
-                company, open a bank account</div>
+              <span class="step__number">4 шаг</span>
+              <div class="step__title">Ваш бизнес и бухгалтерия в нужных руках!</div>
+              <div class="step__text">Регистрируем бизнес, получаем лицензию и учредительные документы вашей компании, открываем счет в банке</div>
             </div>
           </div>
         </div>
