@@ -169,6 +169,9 @@ $site_menu_legal = get_field('site_menu_legal', 'option')['site_menu_item'];
   </div>
 </footer>
 <?php ct()->template('/parts/modals/modals-section.php') ?>
+<link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
+<script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=a9128a1f13b2b692fbec7cc6f8e01c14" charset="UTF-8" async></script>
+
 <?php wp_footer() ?>
 </div>
 </body>

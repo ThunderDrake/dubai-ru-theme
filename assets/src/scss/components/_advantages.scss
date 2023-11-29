@@ -96,6 +96,7 @@
     }
 
     &-button {
+      justify-content: center;
       padding: get-vw(15px) get-vw(30px);
       font-weight: 400;
       font-size: max(12px, get-vw(16px));

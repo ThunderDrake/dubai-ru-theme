@@ -15,7 +15,7 @@
             <div class="map-section__item-text"><span>Лицензия </span> на оказание <b>юридических услуг</b></div>
           </div>
         </div>
-        <button class="btn-reset map-section__button btn--main" data-graph-path="callback-modal">Оставить заявку</button>
+        <button class="btn-reset map-section__button btn--main" data-graph-path="consult-modal">Оставить заявку</button>
       </div>
       <div class="map-section__right">
         <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/map-section__image-1.png" class="map-section__image" width="195" height="245" alt="">

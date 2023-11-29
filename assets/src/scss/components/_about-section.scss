@@ -5,6 +5,7 @@
   background-image: url("../img/about-section__bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+  pointer-events: none;
 
   &__container {
     padding-top: get-vw(280px);

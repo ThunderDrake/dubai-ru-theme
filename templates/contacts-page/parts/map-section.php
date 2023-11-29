@@ -7,10 +7,14 @@
           <div class="contacts-map__phones">
             <div class="footer__top-text">Сейчас работаем, звоните</div>
             <div class="footer__phone">
+              <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/ru-flag.png" class="footer__phone-flag"
+                width="30" height="15" alt="">
+              <a class="footer__phone-link" href="tel:<?= Contacts::get_second_phone()['raw'] ?>"><?= Contacts::get_second_phone()['formated'] ?></a>
+            </div>
+            <div class="footer__phone">
               <img loading="lazy" src="<?= ct()->get_assets_url() ?>/img/dub-flag.png" class="footer__phone-flag"
                 width="30" height="15" alt="">
               <a class="footer__phone-link" href="tel:<?= Contacts::get_main_phone()['raw'] ?>"><?= Contacts::get_main_phone()['formated'] ?></a>
-              <a class="footer__phone-link" href="tel:<?= Contacts::get_second_phone()['raw'] ?>"><?= Contacts::get_second_phone()['formated'] ?></a>
             </div>
             <div class="footer__socials-block">
               <a class="footer__socials-link" href="<?= Contacts::get_wa_url() ?>" rel="nofollow noopener noreferrer">
