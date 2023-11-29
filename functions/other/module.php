@@ -8,3 +8,4 @@ require_once __DIR__ . '/Hide.php';
 require_once __DIR__ . '/menu-cache.php';
 require_once __DIR__ . '/register-cpt-tax-helper.php';
 require_once __DIR__ . '/svg-enable.php';
+require_once __DIR__ . '/export-csv.php';

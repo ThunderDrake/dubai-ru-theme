@@ -4,9 +4,11 @@ import intlTelInput from 'intl-tel-input';
 import * as utils from "../../../../node_modules/intl-tel-input/build/js/utils";
 import * as countryList from "countries-phone-masks";
 
-const validateForms = (selector, rules, url, nonce, action, afterSend) => {
+const validateForms = (selector, rules) => {
   const form = document?.querySelector(selector);
   const telSelector = form?.querySelector('input[type="tel"]');
+
+  const url = form?.action;
 
   if (!form) {
     console.error('Нет такого селектора!');
@@ -71,8 +73,6 @@ const validateForms = (selector, rules, url, nonce, action, afterSend) => {
 
   validation.onSuccess((ev) => {
     let formData = new FormData(ev.target);
-    formData.append('action', action);
-    formData.append('nonce', nonce);
 
     let xhr = new XMLHttpRequest();
 
@@ -270,9 +270,9 @@ const guideFormRules = [
   },
 ];
 
-validateForms('[data-form="footer-form"]', footerFormRules, form_object.url, form_object.nonce, 'form_action');
-validateForms('[data-form="section-form"]', sectionFormRules, form_object.url, form_object.nonce, 'form_action');
-validateForms('[data-form="legal-form"]', serviceLegalFormRules, form_object.url, form_object.nonce, 'form_action');
-validateForms('[data-form="accounting-form"]', serviceAccountingFormRules, form_object.url, form_object.nonce, 'form_action');
-validateForms('[data-form="consult-form"]', serviceConsultFormRules, form_object.url, form_object.nonce, 'form_action');
-validateForms('[data-form="guide-form"]', guideFormRules, form_object.url, form_object.nonce, 'form_action');
+validateForms('[data-form="footer-form"]', footerFormRules);
+validateForms('[data-form="section-form"]', sectionFormRules);
+validateForms('[data-form="legal-form"]', serviceLegalFormRules);
+validateForms('[data-form="accounting-form"]', serviceAccountingFormRules);
+validateForms('[data-form="consult-form"]', serviceConsultFormRules);
+validateForms('[data-form="guide-form"]', guideFormRules);

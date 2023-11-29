@@ -1,3 +1,6 @@
+<?php
+$form = new TaxUae\Form\Form_Guide();
+?>
 <section class="form-section" id="guide">
   <div class="form-section__container container">
     <div class="content-container">
@@ -10,7 +13,7 @@
           </svg>
           <div class="form-section__info-text">Обновлено: <span>12 августа 2023</span></div>
         </div>
-        <form class="form-section__form" action="" data-form="guide-form">
+        <form class="form-section__form" method="POST" action="<?= esc_url( $form->get_url() ) ?>" data-form="guide-form">
           <input class="form-section__form-input input-reset form-section__form-input--tel" name="phone" data-phone-country type="tel">
           <button class="btn-reset form-section__form-button btn--main">Далее</button>
           <label class="custom-checkbox form-section__form-checkbox">

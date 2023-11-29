@@ -1,3 +1,6 @@
+<?php
+$form = new TaxUae\Form\Form_Section();
+?>
 <section class="preferences-section" id="callback-section">
   <div class="preferences-section__container container">
     <div class="content-container">
@@ -16,8 +19,8 @@
         <div class="preferences-section__form-title">
           Заполните форму и наш специалист свяжется с вами<br><span>в течение 15 минут</span>
         </div>
-        <form class="preferences-section__form" data-form="section-form">
-          <input class="preferences-section__form-input input-reset preferences-section__form-input--name" name="name" type="text" placeholder="Ваш e-mail">
+        <form class="preferences-section__form" method="POST" action="<?= esc_url( $form->get_url() ) ?>" data-form="section-form">
+          <input class="preferences-section__form-input input-reset preferences-section__form-input--name" name="name" type="text" placeholder="Ваше имя">
           <input class="preferences-section__form-input input-reset preferences-section__form-input--tel" name="phone" data-phone-country type="tel">
           <button class="btn-reset preferences-section__form-button btn--main">Далее</button>
           <label class="custom-checkbox preferences-section__form-checkbox">

@@ -1,13 +1,15 @@
 <?php
 $site_menu_accounting = get_field('site_menu_accounting', 'option')['site_menu_item'];
 $site_menu_legal = get_field('site_menu_legal', 'option')['site_menu_item'];
+
+$form_footer = new TaxUae\Form\Form_Footer();
 ?>
 <footer class="footer">
   <div class="content-container">
     <div class="footer__form">
       <div class="footer__form-title">Не нашли ответа на свой вопрос?</div>
       <div class="footer__form-subtitle">Оставьте заявку на бесплатную предварительную консультацию. Ответим на все вопросы.</div>
-      <form class="footer__form-form" action="" data-form="footer-form">
+      <form class="footer__form-form" method="POST" action="<?= esc_url( $form_footer->get_url() ) ?>" data-form="footer-form">
         <input class="footer__form-input input-reset footer__form-input--name" name="name" type="text"
           placeholder="Ваше имя">
         <input class="footer__form-input input-reset footer__form-input--tel" name="phone" data-phone-country
